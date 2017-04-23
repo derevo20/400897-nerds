@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html">
+                <img src="img/nerds-logo.png" width="100" height="50" alt="Нёрдс">
+            </a>
+            <nav class="main-header-menu">
+                <a href="index.html" class="current">студия</a>
+                <a href="#">клиенты</a>
+                <a href="catalog.html">магазин</a>
+                <a href="#">контакты</a>
+                <a href="#" class="main-menu-cart">корзина</a>
+            </nav>
+            <h1>Магазин готовых шаблонов</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>СОРТИРОВАТЬ</h2>
+        <ol class="breadcrumb">
+            <li>
+                <a href="#">ПО ЦЕНЕ</a>
+            </li>
+            <li>
+                <a href="#">ПО ТИПУ</a>
+            </li>
+            <li>
+                <a href="#">ПО НАЗВАНИЮ</a>
+        </ol>
+        <button>вниз</button>
+        <button>вверх</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+
+                <!--не уверен что понял как делать ползунок
+            <h2>СТОИМОСТЬ</h2>
+            <div class="filter-price">
+                <input type="range" id="price-field" name="price-range">
+                <label for=price-field>
+                <p>От <span>0</span> До <span>15 000</span></p>
+                </label>
+            </div>
+            -->
+
+                <h2>CЕТКА</h2>
+                <label>
+        <input type="radio" name="web" value="adaptive" checked>
+        Адаптивная
+                </label>
+                <label>
+        <input type="radio" name="web" value="fixed">
+        Фиксированная
+                </label>
+                <label>
+        <input type="radio" name="web" value="rubber">
+        Резиновая
+                </label>
+            </fieldset>
+            <fieldset>
+                <h2>ОСОБЕННОСТИ</h2>
+                <input type="checkbox" name="web" id="slider" value="slider" checked>
+                <label for="slider">Слайдер</label>
+                <input type="checkbox" name="web" id="advantages" value="advantages">
+                <label for="slider">Блок преимуществ</label>
+                <input type="checkbox" name="web" id="news" value="news" checked>
+                <label for="slider">Новости</label>
+                <input type="checkbox" name="web" id="gallery" value="gallery">
+                <label for="slider">Галерея</label>
+                <input type="checkbox" name="web" id="basket" value="basket">
+                <label for="slider">Корзина</label>
+                <button type="submit">ПОКАЗАТЬ</button>
+            </fieldset>
+        </form>
+        <div class="catalog">
+            <div class="product-main">
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="Седона"></a>
+                    </div>
+                    <h2>SEDONA</h2>
+                    <p>Информационный сайт для туристов</p>
+                    <a href="#" class="btn">9 900Руб.</a>
+                </div>
+
+                <!--- ме не ясно в этих картинках есь разные ссылки на покупку и т.д. или же это просто картинки, если есть как их реализовать-->
+
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="Пинк"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="Барбершоп"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="Мишка"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="А+"></a>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-img">
+                        <a href="#"><img src="http://placehold.it/150x100" alt="Кваст"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <nav class="paginator">
+        <ol>
+            <li>
+                <a href="#1">1</a>
+            </li>
+            <li>
+                <a href="#2">2</a>
+            </li>
+            <li>
+                <a href="#3">3</a>
+            </li>
+            <li>
+                <a href="#">СЛЕДУЮЩАЯ</a>
+            </li>
+        </ol>
+    </nav>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="map">
+                <img src="img/map.png" alt="карта">
+                <img src="img/map-marker.png" alt="отметка">
+            </div>
+            <div class="footer-contacts">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p>191186, Санкт-Петербург,</p>
+                <p>ул. Б.Конюшенная, д. 19/18</p>
+                <p>тел. +7 (812) 275-75-75</p>
+                <a href="#">НАПИШИТЕ НАМ</a>
+            </div>
+            <div class="footer-social">
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                <p class="footer-title">Давайте дружить, это выгодно!</p>
+                <p class="footer-info">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
