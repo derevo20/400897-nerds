@@ -39,17 +39,13 @@
         <button>вверх</button>
         <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-
-                <!--не уверен что понял как делать ползунок
-            <h2>СТОИМОСТЬ</h2>
-            <div class="filter-price">
-                <input type="range" id="price-field" name="price-range">
-                <label for=price-field>
-                <p>От <span>0</span> До <span>15 000</span></p>
-                </label>
-            </div>
-            -->
-
+                <input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
+                <span id="range">0</span>
+                <script type="text/javascript">
+                    function showValue(newValue) {
+                        document.getElementById("range").innerHTML = newValue;
+                    }
+                </script>
                 <h2>CЕТКА</h2>
                 <label>
         <input type="radio" name="web" value="adaptive" checked>
@@ -81,16 +77,27 @@
         </form>
         <div class="catalog">
             <div class="product-main">
-                <div class="product">
+                
+                
+                
+                <!-- <figure> 
+
+                    <div class="product">
                     <div class="product-img">
                         <a href="#"><img src="http://placehold.it/150x100" alt="Седона"></a>
                     </div>
                     <h2>SEDONA</h2>
+
+                    </figure>     ты это имел ввиду?->
+
+                    А это сделать отдельно ?
                     <p>Информационный сайт для туристов</p>
                     <a href="#" class="btn">9 900Руб.</a>
                 </div>
+                
+                </figure>     ты это имел ввиду?->
 
-                <!--- ме не ясно в этих картинках есь разные ссылки на покупку и т.д. или же это просто картинки, если есть как их реализовать-->
+                <!- только в седоне цена отельно в остальных хрен его знает , вроде ничего не вложено-->
 
                 <div class="product">
                     <div class="product-img">
@@ -121,7 +128,7 @@
         </div>
     </main>
     <nav class="paginator">
-        <ol>
+        <ul>
             <li>
                 <a href="#1">1</a>
             </li>
@@ -134,7 +141,7 @@
             <li>
                 <a href="#">СЛЕДУЮЩАЯ</a>
             </li>
-        </ol>
+        </ul>
     </nav>
     <footer class="main-footer">
         <div class="container">
@@ -142,17 +149,19 @@
                 <img src="img/map.png" alt="карта">
                 <img src="img/map-marker.png" alt="отметка">
             </div>
-            <div class="footer-contacts">
+            <div class="footer-contacts-left">
                 <h3>NЁRDS DESIGN STUDIO</h3>
                 <p>191186, Санкт-Петербург,</p>
                 <p>ул. Б.Конюшенная, д. 19/18</p>
                 <p>тел. +7 (812) 275-75-75</p>
                 <a href="#">НАПИШИТЕ НАМ</a>
             </div>
-            <div class="footer-social">
+            <div class="footer-social-left">
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-title-right">
                 <p class="footer-title">Давайте дружить, это выгодно!</p>
                 <p class="footer-info">Скидка 10% для друзей из социальных сетей.</p>
             </div>
