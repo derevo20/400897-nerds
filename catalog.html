@@ -25,7 +25,7 @@
 
     <main class="container">
         <h2>СОРТИРОВАТЬ</h2>
-        <ol class="breadcrumb">
+        <ol class="sorting">
             <li>
                 <a href="#">ПО ЦЕНЕ</a>
             </li>
@@ -39,13 +39,6 @@
         <button>вверх</button>
         <form action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
-                <input type="range" min="0" max="50" value="0" step="5" onchange="showValue(this.value)" />
-                <span id="range">0</span>
-                <script type="text/javascript">
-                    function showValue(newValue) {
-                        document.getElementById("range").innerHTML = newValue;
-                    }
-                </script>
                 <h2>CЕТКА</h2>
                 <label>
         <input type="radio" name="web" value="adaptive" checked>
@@ -77,28 +70,16 @@
         </form>
         <div class="catalog">
             <div class="product-main">
-                
-                
-                
-                <!-- <figure> 
-
+                <figure>
                     <div class="product">
-                    <div class="product-img">
-                        <a href="#"><img src="http://placehold.it/150x100" alt="Седона"></a>
+                        <div class="product-img">
+                            <a href="#"><img src="http://placehold.it/150x100" alt="Седона"></a>
+                        </div>
                     </div>
-                    <h2>SEDONA</h2>
-
-                    </figure>     ты это имел ввиду?->
-
-                    А это сделать отдельно ?
-                    <p>Информационный сайт для туристов</p>
-                    <a href="#" class="btn">9 900Руб.</a>
-                </div>
-                
-                </figure>     ты это имел ввиду?->
-
-                <!- только в седоне цена отельно в остальных хрен его знает , вроде ничего не вложено-->
-
+                        <h2>SEDONA</h2>
+                </figure>
+                <p>Информационный сайт для туристов</p>
+                <a href="#" class="btn">9 900Руб.</a>
                 <div class="product">
                     <div class="product-img">
                         <a href="#"><img src="http://placehold.it/150x100" alt="Пинк"></a>
