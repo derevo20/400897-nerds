@@ -1,0 +1,61 @@
+body {
+  width: 900px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+
+h2 {
+    margin: 0;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: normal;
+}
+
+.legend-fat {
+   margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.text-head {
+  font-size: 10px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1;
+  text-align: left;
+  position: absolute;
+  left: 293.386px;
+  top: 251.392px;
+  z-index: 86;
+  font-weight: bold;
+}
+
+.main-header-menu {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.875;
+  text-align: left;
+  position: absolute;
+  left: 523.623px;
+  top: 94.672px;
+  z-index: 100;
+}
+
+.main-menu-cart {
+  font-size: 20px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.875;
+  text-align: right;
+  left: 1252.074px;
+  top: 85.221px;
+  z-index: 95;
+}
+
